@@ -1,0 +1,31 @@
+{
+  "name": "testing_assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "keywords": [
+    "NodeJS",
+    "Jest",
+    "Testing",
+    "TDD"
+  ],
+  "author": "Shane Jeremich",
+  "license": "ISC",
+  "description": "NodeJS TDD Testing Assignment",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0"
+  }
+}
