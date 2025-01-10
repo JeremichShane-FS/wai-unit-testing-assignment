@@ -7,6 +7,7 @@ A JavaScript module for obscuring credit card numbers with test coverage using J
 - Credit Card Validation Testing Project
   - [✨ Features](#-features)
   - [🛠️ Technologies](#️-technologies)
+  - [📦 Project Configuration](#-project-configuration)
   - [🚀 Getting Started](#-getting-started)
   - [🔍 Testing](#-testing)
   - [💻 Usage](#-usage)
@@ -25,6 +26,62 @@ A JavaScript module for obscuring credit card numbers with test coverage using J
 
 - Jest for testing
 - ES Modules
+
+I'll update the configuration section based on your actual files:
+
+## 📦 Project Configuration
+
+### ES Modules Setup
+
+This project uses ES Modules (ESM) instead of CommonJS. Here are the key configurations:
+
+- **package.json**
+  ```json
+  {
+    "name": "testing_assignment",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+      "test": "jest --coverage"
+    },
+    "jest": {
+      "transform": {
+        "^.+\\.js$": "babel-jest"
+      }
+    }
+  }
+  ```
+
+### Dependencies
+
+```json
+{
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0"
+  }
+}
+```
+
+### Configuration Files
+
+- **.babelrc**
+  ```json
+  {
+    "presets": ["@babel/preset-env"]
+  }
+  ```
+
+### Notes:
+
+- `"type": "module"` in package.json enables ES Modules syntax (import/export)
+- Jest and Babel are configured to handle ES Modules in the testing environment
+- The project uses Jest's built-in coverage reporting
+- Babel is set up to transform modern JavaScript code for compatibility
 
 ## 🚀 Getting Started
 
