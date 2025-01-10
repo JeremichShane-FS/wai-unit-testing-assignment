@@ -15,12 +15,20 @@ describe("Credit Card Obscuring Module", () => {
     expect(obscureCard("123456789012")).toBe("********9012");
   });
 
+  test("Given a 16-digit card number, when I submit it, then all digits except last 4 should be obscured", () => {
+    expect(obscureCard("1234567890123456")).toBe("************3456");
+  });
+
+  test("Given a 14-digit card number, when I submit it, then all digits except last 4 should be obscured", () => {
+    expect(obscureCard("12345678901234")).toBe("**********1234");
+  });
+
   test("Given a non-numeric input, when I submit it, then it should return error message", () => {
     expect(obscureCard("12abc34567890")).toBe("Enter numbers only");
   });
 
   test("Given a number less than 12 digits, when I submit it, then it should return error message", () => {
-    expect(obscureCard("12345")).toBe(errorMsg);
+    expect(obscureCard("12345678901")).toBe(errorMsg);
   });
 
   test("Given a number more than 16 digits, when I submit it, then it should return error message", () => {
