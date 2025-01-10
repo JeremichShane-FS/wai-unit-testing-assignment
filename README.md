@@ -5,7 +5,6 @@ A JavaScript module for obscuring credit card numbers with test coverage using J
 ## 📑 Table of Contents
 
 - Credit Card Validation Testing Project
-  - [📑 Table of Contents](#-table-of-contents)
   - [✨ Features](#-features)
   - [🛠️ Technologies](#️-technologies)
   - [🚀 Getting Started](#-getting-started)
